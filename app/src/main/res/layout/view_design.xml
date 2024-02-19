@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rvclick"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+<!--        <TextView-->
+<!--            android:id="@+id/ID"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:text="NIM"-->
+<!--            android:textSize="14sp"-->
+<!--            tools:ignore="HardcodedText" />-->
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/texthead"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="Nama"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/nilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="Nama"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:background="#FFF9F9F9"
+            app:srcCompat="@drawable/ic_baseline_delete_24"
+            tools:ignore="ContentDescription"
+            app:tint="#f00" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

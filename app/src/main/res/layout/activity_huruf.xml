@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".huruf.Huruf">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:gravity="center"
+        app:elevation="0dp"
+        android:background="#01afff"
+        android:id="@+id/appbarid"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_gravity="end"
+                android:contentDescription="TODO"
+                android:fontFamily="@font/poplight"
+                android:paddingLeft="5dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="15dp"
+                android:text="Yuk \nMembaca"
+                android:textSize="40dp"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                tools:layout_editor_absoluteX="-46dp"
+                tools:layout_editor_absoluteY="262dp" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp"
+                android:src="@drawable/huruf"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:text="Mari Belajar"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/appbarid" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btninst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/instruksi"
+        android:drawableEnd="@drawable/ic_about"
+        android:drawablePadding="20dp"
+        android:drawableTint="#23D0E2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnhuruf" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnhuruf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btnhuruf"
+        android:drawableEnd="@drawable/huruf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnortu" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnortu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/btnpanduan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

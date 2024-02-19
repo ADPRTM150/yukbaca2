@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yukbaca">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ilustrator1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ilustrator1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YukBaca">
+        <activity android:name=".DetailNilai" />
+        <activity android:name=".kata.Kata_Bermain_Membaca" />
+        <activity android:name=".Test_Bermain_Nilai" />
+        <activity android:name=".Test_Bermain_welcome" />
+        <activity android:name=".ResultTestActivity" />
+        <activity
+            android:name=".angka.AngkaFix"/>
+        <activity
+            android:name=".angka.Angka"/>
+        <activity
+            android:name=".huruf.HurufKecil"/>
+        <activity
+            android:name=".Instruksi"/>
+        <activity
+            android:name=".huruf.Huruf"/>
+        <activity
+            android:name=".Test_Bermain"
+            android:theme="@style/AppTheme1"/>
+        <activity
+            android:name=".PanduanOrtu"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+
+</manifest>

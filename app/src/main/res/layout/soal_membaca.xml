@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soal Membaca"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="30sp"
+        android:layout_margin="30dp"
+        android:textColor="#B28202"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/r2"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:text="kata:" />
+    <TextView
+        android:id="@+id/soalbaca"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppinsbold"
+        android:text="bu"
+        android:textColor="@color/black"
+        android:textSize="55sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_mic_black_24dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/button" />
+        <TextView
+            android:id="@+id/hasiltext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/r2"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:text="tekan icon mic kemudian baca kata" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"/>
+</LinearLayout>

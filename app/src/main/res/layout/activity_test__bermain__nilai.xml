@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Test_Bermain_Nilai">
+
+<LinearLayout
+    android:id="@+id/linearhead"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/bg_top_nilai"
+    android:orientation="horizontal">
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearhead"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".MainActivity">-->
+
+<!--<com.google.android.material.appbar.AppBarLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="210dp"-->
+<!--    android:gravity="center"-->
+<!--    app:elevation="0dp"-->
+<!--    android:background="@drawable/bg_top_nilai"-->
+<!--    android:id="@+id/appbarid">-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:paddingEnd="10dp"-->
+<!--        android:paddingTop="20dp"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:src="@drawable/ui_nilai"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--        app:layout_scrollFlags="scroll|enterAlways|snap"-->
+<!--        android:contentDescription="TODO" />-->
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@drawable/round_a"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabMode="fixed"-->
+<!--        app:tabTextColor="#8f4d2e"-->
+<!--        app:tabIndicatorFullWidth="false"-->
+<!--        app:tabTextAppearance="@style/tab_text"-->
+<!--        app:tabIndicatorColor="@color/colorPrimary"/>-->
+
+
+
+<!--</com.google.android.material.appbar.AppBarLayout>-->
+
+
+<!--<androidx.recyclerview.widget.RecyclerView-->
+<!--    android:id="@+id/recycler"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--    android:layout_margin="8dp"-->
+<!--    android:scrollbars="vertical">-->
+
+<!--</androidx.recyclerview.widget.RecyclerView>-->
+
+
+<!--</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>-->
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".Ketua">-->
+
+<!--<LinearLayout-->
+<!--    android:id="@+id/linearhead"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:background="@drawable/bg_grad"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:fontFamily="@font/gotham"-->
+<!--        android:layout_margin="24dp"-->
+<!--        android:text="Daftar Ketua PMII dari masa ke masa"-->
+<!--        android:gravity="center"/>-->
+<!--</LinearLayout>-->
+
+<!--<androidx.recyclerview.widget.RecyclerView-->
+<!--    android:id="@+id/recycler"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_below="@id/linearhead"-->
+<!--    tools:listitem="@layout/item_ketua" />-->
+
+<!--</RelativeLayout>-->

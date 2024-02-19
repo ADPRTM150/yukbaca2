@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:gravity="center"
+        app:elevation="0dp"
+        android:background="#00a1ff"
+        android:id="@+id/appbarid">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="end"
+                android:contentDescription="TODO"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingEnd="10dp"
+                android:text="@string/panduan_orang_tua"
+                android:textSize="50sp"
+                android:fontFamily="@font/poplight"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="end"
+                android:src="@drawable/panduanortu"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                android:contentDescription="TODO" />
+        </LinearLayout>
+
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/round_a"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:id="@+id/tablayputid"
+            app:tabTextColor="#354364"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorColor="#354364"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="32dp"
+        android:paddingBottom="0dp"/>
+</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
